@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X, Github, Linkedin, Twitter } from "lucide-react";
+import { SiLeetcode } from "react-icons/si";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -53,16 +54,25 @@ export default function Navbar() {
       href: "https://github.com/ankman007",
       icon: <Github className="w-5 h-5" />,
       label: "GitHub",
+      tooltip: "GitHub: ankman007",
     },
     {
       href: "https://linkedin.com/in/ankit-poudel007",
       icon: <Linkedin className="w-5 h-5" />,
       label: "LinkedIn",
+      tooltip: "LinkedIn: ankit-poudel007",
     },
     {
       href: "https://x.com/ankitpoudel_",
       icon: <Twitter className="w-5 h-5" />,
       label: "Twitter",
+      tooltip: "Twitter: @ankitpoudel_",
+    },
+    {
+      href: "https://leetcode.com/u/ankeetpoudel_/",
+      icon: <SiLeetcode className="w-5 h-5" />,
+      label: "LeetCode",
+      tooltip: "LeetCode: ankeetpoudel_",
     },
   ];
 
@@ -70,13 +80,6 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-xl border-b border-slate-200/50 z-50">
       <div className="max-w-5xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center py-5">
-          {/* <Link
-            href="/"
-            className="font-heading text-xl font-bold text-slate-900 hover:text-slate-700 transition-colors"
-          >
-            
-          </Link> */}
-
           <div className="hidden md:flex items-center space-x-10">
             {navItems.map((item) => (
               <Link
@@ -102,6 +105,7 @@ export default function Navbar() {
                 rel="noopener noreferrer"
                 className="text-slate-600 hover:text-slate-900 transition-colors"
                 aria-label={social.label}
+                title={social.tooltip}
               >
                 {social.icon}
               </a>

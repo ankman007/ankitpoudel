@@ -149,6 +149,8 @@ export default function Portfolio() {
           </div>
 
           {/* Experience */}
+
+          {/* Experience */}
           <div className="mb-20">
             <h3 className="font-heading text-2xl font-bold text-slate-900 text-center mb-12">
               Experience
@@ -163,28 +165,16 @@ export default function Portfolio() {
                 </span>
               </div>
               <p className="text-slate-600 font-medium mb-4">CodeSQAD</p>
-              <ul className="space-y-3 text-slate-700">
-                <li className="flex items-start gap-3">
-                  <span className="text-slate-400 mt-2 select-none">•</span>
-                  <span>
-                    Built real-time chat using Socket.io and Next.js for
-                    seamless communication
-                  </span>
+              <ul className="list-disc list-inside space-y-3 text-slate-700 pl-1">
+                <li>
+                  Built real-time chat using Socket.io and Next.js for seamless
+                  communication
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-slate-400 mt-2 select-none">•</span>
-                  <span>Improved state management with Redux Toolkit</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-slate-400 mt-2 select-none">•</span>
-                  <span>Integrated REST APIs for dynamic data rendering</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-slate-400 mt-2 select-none">•</span>
-                  <span>
-                    Collaborated in agile sprints and code reviews to improve UX
-                    and performance
-                  </span>
+                <li>Improved state management with Redux Toolkit</li>
+                <li>Integrated REST APIs for dynamic data rendering</li>
+                <li>
+                  Collaborated in agile sprints and code reviews to improve UX
+                  and performance
                 </li>
               </ul>
             </div>
