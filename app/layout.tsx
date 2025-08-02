@@ -1,4 +1,5 @@
-import type React from "react"
+import React from "react"
+import Head from "next/head"
 import type { Metadata } from "next"
 import { Space_Grotesk, Inter } from "next/font/google"
 import "./globals.css"
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
     description: "Aspiring software engineer specializing in backend systems, automation, and AI-powered tools.",
     type: "website",
   },
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -36,6 +37,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`scroll-smooth ${spaceGrotesk.variable} ${inter.variable}`}>
+      <Head>
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
+      </Head>
       <body className="font-body antialiased">{children}</body>
     </html>
   )

@@ -67,7 +67,10 @@ export default function Portfolio() {
       <Navbar />
 
       {/* Hero Section */}
-      <section id="home" className="min-h-screen flex items-center justify-center hero-pattern">
+      <section
+        id="home"
+        className="min-h-screen flex items-center justify-center hero-pattern"
+      >
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
           <div className="animate-fade-in-up">
             <h1 className="font-heading text-5xl sm:text-6xl lg:text-7xl font-bold text-slate-900 mb-6 tracking-tight">
@@ -77,15 +80,19 @@ export default function Portfolio() {
               Backend Developer | Building Scalable &amp; Robust Web
               Applications
             </p>
-            <a href="/Ankit_Poudel_Resume.pdf" download className="inline-block cursor-pointer">
-            <Button
-              size="lg"
-              className="bg-slate-900 hover:bg-slate-800 cursor-pointer text-white px-8 py-4 text-lg font-medium rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 flex items-center"
+            <a
+              href="/Ankit_Poudel_Resume.pdf"
+              download
+              className="inline-block cursor-pointer"
             >
-              <Download className="w-5 h-5 mr-2" />
-              Download Resume
-            </Button>
-          </a>
+              <Button
+                size="lg"
+                className="bg-slate-900 hover:bg-slate-800 cursor-pointer text-white px-8 py-4 text-lg font-medium rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 flex items-center"
+              >
+                <Download className="w-5 h-5 mr-2" />
+                Download Resume
+              </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -267,9 +274,8 @@ export default function Portfolio() {
       <footer className="py-5 border-t border-slate-200">
         <div className="max-w-5xl mx-auto px-6 lg:px-8 text-center">
           <p className="text-slate-500 font-medium">
-  © {new Date().getFullYear()} Ankit Poudel. All rights reserved.
-</p>
-
+            © {new Date().getFullYear()} Ankit Poudel. All rights reserved.
+          </p>
         </div>
       </footer>
     </div>
